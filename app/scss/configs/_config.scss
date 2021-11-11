@@ -54,10 +54,6 @@ button{
     z-index: 100;
     display: block;
 
-    @media(max-width: 768px) {
-        display: block;
-        right: 15px;
-    }
 }
 
 .burger-line{

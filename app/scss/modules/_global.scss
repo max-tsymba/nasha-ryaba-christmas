@@ -8,6 +8,10 @@ body{
     display: flex;
     flex-direction: column;
     min-height: 100%;
+
+    @media (max-width: 768px) {
+        background-image: url('../img/mb-bg.png') !important;
+    }
 }
 
 .main{

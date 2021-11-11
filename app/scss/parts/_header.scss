@@ -5,9 +5,6 @@
     left: 0;
     right: 0;
     
-    @media only screen and (min-width: 577px) {
-        height: 239px;
-    }
 
     &__inner{
         display: flex;
@@ -16,8 +13,13 @@
         padding-top: 82px;
         padding-bottom: 10px;
 
+        
+        @media (max-width: 768px) {
+            padding-top: 50px;
+        }
+
         @media only screen and (max-width: 576px) {
-            padding-top: 53px;
+            padding-top: 40px;
         }
     }
 
@@ -36,24 +38,53 @@
         &:hover{
             opacity: 0.9;
         }
+
+        @media (max-width: 1240px) {
+            font-size: 24px;
+            margin-right: 25px;
+            padding: 18px 20px;
+        }
+
+        @media (max-width: 920px) {
+            font-size: 18px;
+            margin-right: 25px;
+            padding: 18px 20px;
+        }
+
+        @media (max-width: 768px) {
+            display: none;
+        }
     }
 
     &__logos{
         width: 547px;
         display: flex;
-        justify-content: space-between;
         align-items: flex-start;
+        flex: 1 1 0%;
+        margin-right: 20px;
+
+        @media only screen and (max-width: 768px) {
+            margin-right: 130px;
+        }
 
         @media only screen and (max-width: 576px) {
-            width: 330px;
+            margin-right: 30px;
         }
 
         &-link{
             &:nth-child(2) {
-                margin-left: 13px;
+                margin-left: 40px;
+
+                @media only screen and (max-width: 576px) {
+                    margin-left: 10px;
+                }
             }
             &:nth-child(3) {
-                margin-left: 20px;
+                margin-left: 40px;
+
+                @media only screen and (max-width: 576px) {
+                    margin-left: 10px;
+                }
             }
             outline: none;
         }
