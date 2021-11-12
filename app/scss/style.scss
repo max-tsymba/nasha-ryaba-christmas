@@ -103,3 +103,68 @@
         color: #ED2024;
     }
 }
+
+.modal-form select{
+    align-items: center;
+    height: 57px;
+    padding: 0 15px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 31px;
+    color: #fff;
+    background-color: transparent;
+    border: 2px solid #fcfcfc;
+    border-radius: 20px;
+    width: 100%;
+    outline: none;
+    cursor: pointer;
+
+    @media only screen  and (min-width: 280px) and (max-width: 540px) {
+        font-size: 16px;
+        line-height: 20px;
+        height: 40px;
+        border-radius: 10px;
+        padding: 0 10px;
+    }
+
+    option{
+        color: #fff;
+        font-family: 'Roboto';
+        background-color: rgba(109, 109, 109, 0.8);
+    }
+}
+
+.top__banner-image_img{
+    animation: IPush 1.5s ease-in infinite;
+}
+
+#reg__button{
+    .top__button-btn span{
+        animation: IDown 2s ease-in-out infinite;
+    }
+}
+@keyframes IDown {
+    0% {
+        transform: translateY(10px);
+    }
+    70% {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(10px);
+    }
+}
+
+
+@keyframes IPush {
+    0% {
+        transform: scale(1);
+    }
+    70% {
+        transform: scale(0.96);
+    }
+    to {
+        transform: scale(1);
+    }
+}

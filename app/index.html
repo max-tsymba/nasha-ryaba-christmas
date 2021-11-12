@@ -99,11 +99,11 @@
                             </button>
 
                             <div class="top__logos">
-                                <a class="top__logos-viber inline-block" href="#">
+                                <a class="top__logos-viber inline-block" href="viber://pa?chatURI=NashaRyabaGiftBot&text=start">
                                     <img src="./img/viber.png" alt="viber">
                                 </a>
                                 <span class="top__logos-span inline-block">або</span>
-                                <a class="top__logos-telegram inline-block" href="#">
+                                <a class="top__logos-telegram inline-block" href="https://t.me/NashaRyabaGiftBot">
                                     <img src="./img/telegram.png" alt="telegram">
                                 </a>
                             </div>
@@ -117,12 +117,13 @@
                 <div class="container">
                     <div class="gifts__inner">
 
-                        <h1 class="gifts__title">
+                        <h1 class="gifts__title" data-aos="fade-up-right">
                             щотижневі подарунки
                         </h1>
 
                         <div class="gifts__items">
-                            <div class="gifts__item">
+                            <div class="gifts__item aos-init" data-aos="fade-zoom-in"
+                            data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0">
                                 <img src="./img/proektor.png" alt="image">
 
                                 <div class="gifts__block">
@@ -137,7 +138,8 @@
                                 </div>
                             </div>
 
-                            <div class="gifts__item">
+                            <div class="gifts__item aos-init" data-aos="fade-zoom-in"
+                            data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0">
                                 <img src="./img/blender.png" alt="image">
 
                                 <div class="gifts__block">
@@ -152,7 +154,8 @@
                                 </div>
                             </div>
 
-                            <div class="gifts__item">
+                            <div class="gifts__item aos-init" data-aos="fade-zoom-in"
+                            data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0">
                                 <img src="./img/christm.png" alt="image">
 
                                 <div class="gifts__block">
@@ -214,6 +217,35 @@
 
                 <label class="modal-form__label" for="#">
                     <input type="text" required="" pattern="\w*" name="code" placeholder="Акцiйний код">
+                </label>
+
+                <label class="modal-form__label select" for="seller_shop">
+                    <select name="seller_shop" id="seller_shop" required>
+                        <option value="" selected="" disabled="">Виберіть супермаркет</option>
+                        <option value="Ашан">Ашан</option>
+                        <option value="Фора">Метро</option>
+                        <option value="Сільпо">Сільпо</option>
+                        <option value="Varus">Varus</option>
+                        <option value="Novus">Novus</option>
+                        <option value="Фора">Фора</option>
+                        <option value="Fozzy">Fozzy</option>
+                        <option value="Копійка">Копійка</option>
+                        <option value="Класс">Класс</option>
+                        <option value="Еко-маркет">Еко-маркет</option>
+                        <option value="Рост">Рост</option>
+                        <option value="Чудо Маркет">Чудо Маркет</option>
+                        <option value="Грош">Грош</option>
+                        <option value="Таврія">Таврія</option>
+                        <option value="МегаМаркет1">МегаМаркет</option>
+                        <option value="Ultramarket">Ultramarket</option>
+                        <option value="Коло">Коло</option>
+                        <option value="Економ">Економ</option>
+                        <option value="Грош">Грош</option>
+                        <option value="Делві">Делві</option>
+                        <option value="Грін Маркет">Грін Маркет</option>
+                        <option value="Ідеал">Ідеал</option>
+                        <option value="Інші мережі">Інші мережі</option>
+                    </select>
                 </label>
 
                 <div class="checkbox">
